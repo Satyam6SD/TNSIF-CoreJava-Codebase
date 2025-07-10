@@ -1,6 +1,6 @@
 package com.tnsif.dayeleven.finallyblock;
 
-public class NestedtryClass {
+public class NestedtryCatch {
 	
 	public static void check()
 	{
