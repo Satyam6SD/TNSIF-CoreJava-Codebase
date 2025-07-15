@@ -2,14 +2,13 @@ package com.fooddeliverysystem.entities;
 
 public class Payment 
 {
-	
-	private int paymentId;
-    private int orderId;
+    private int paymentId;
+    private String orderId;
     private String method;
     private double amount;
     private boolean success;
 
-    public Payment(int paymentId, int orderId, String method, double amount, boolean success) {
+    public Payment(int paymentId, String orderId, String method, double amount, boolean success) {
         this.paymentId = paymentId;
         this.orderId = orderId;
         this.method = method;
@@ -21,7 +20,7 @@ public class Payment
         return paymentId;
     }
 
-    public int getOrderId() {
+    public String getOrderId() {
         return orderId;
     }
 
@@ -43,13 +42,11 @@ public class Payment
 
     @Override
     public String toString() {
-        return "Payment{" +
-                "paymentId=" + paymentId +
-                ", orderId=" + orderId +
-                ", method='" + method + '\'' +
-                ", amount=" + amount +
-                ", success=" + success +
-                '}';
+        return "🧾 Payment Receipt:\n" +
+               "  Payment ID   : " + paymentId + "\n" +
+               "  Order ID     : " + orderId + "\n" +
+               "  Method       : " + method + "\n" +
+               "  Amount Paid  : ₹" + amount + "\n" +
+               "  Status       : " + (success ? "✅ Success" : "❌ Failed");
     }
-
 }
