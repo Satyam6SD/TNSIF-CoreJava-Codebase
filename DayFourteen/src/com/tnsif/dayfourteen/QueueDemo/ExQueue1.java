@@ -1,12 +1,10 @@
-package com.tnsif.dayfourteen.listdemo;
+package com.tnsif.dayfourteen.QueueDemo;
 
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class ExQueue1 
-{
-	
+public class ExQueue1 {
 public static void main(String[] args) {
 		
 		Queue<Integer> r=new LinkedList<Integer>();

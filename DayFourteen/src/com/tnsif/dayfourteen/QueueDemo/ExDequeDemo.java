@@ -1,11 +1,8 @@
-package com.tnsif.dayfourteen.listdemo;
-
+package com.tnsif.dayfourteen.QueueDemo;
 import java.util.ArrayDeque;
 import java.util.Deque;
-
 public class ExDequeDemo 
 {
-	
 	public static void main(String[] args) {
 		
 		Deque<String> deque1=new ArrayDeque<String>();
