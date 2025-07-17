@@ -1,13 +1,12 @@
-package com.tnsif.dayfifteen.jdbcoperation;
+package com.tnsif.dayfifteen.jdbcoperations;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
-public class JDBCTable 
-{
-public static void main(String[] args) {
-		
+public class Update {
+
+	public static void main(String[] args) {
 		try {
 			//step 1: Load or register the driver
 			Class.forName("com.mysql.jdbc.Driver");
@@ -25,7 +24,7 @@ public static void main(String[] args) {
 			
 			//step 4: write a query
 			
-			String q="create table student(stdid int, name varchar(20), subject varchar(20), duration double)";
+			String q="update student set subject='DBMS' where stdid=104";
 			
 			
 			boolean s=stmt.execute(q);
@@ -36,4 +35,5 @@ public static void main(String[] args) {
 		}
 
 	}
+
 }
